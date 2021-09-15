@@ -1,4 +1,6 @@
 # Large-Scale-Linear-Regression
-Here a 20M+ New york taxi data is used to model taxi fare using Linear Regression. A mini-batch SGD is implemented in parallel using dask.
+Implemented a linear regression model to predict taxi fare using the New York taxi dataset from Kaggle which contains data from 20M+ trips.
+Used Geo-hashing to split New York city into smaller blocks and converted the location data into categorical variables and augmented the dataset with hourly weather data. 
+Data preprocessing and feature engineering were parallelized using Dask. Implemented a parallelized mini-batch Gradient Descent algorithm using Dask achieving an RMSE of 3.4. 
 Link for the dataset: https://www.kaggle.com/c/new-york-city-taxi-fare-prediction
 
